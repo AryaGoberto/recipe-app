@@ -223,7 +223,7 @@ class RecipeHomePage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               Text(
-                'Alena Sabyan',
+                'Arya Gunavaro',
                 style: theme.textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.w700,
                   color: const Color(0xFF0F172A),
