@@ -1,16 +1,67 @@
-# food_recipe_app
+# 🍽️ Food Recipe App
 
-A new Flutter project.
+Food Recipe App is a Flutter application developed as part of the requirements for the **[Dicoding “Belajar Membuat Aplikasi Flutter untuk Pemula”](https://www.dicoding.com/academies/159-belajar-membuat-aplikasi-flutter-untuk-pemula)** course.
 
+This project demonstrates fundamental Flutter concepts such as widget composition, navigation, state handling, and basic UI layout following Flutter best practices.
+
+---
+
+## 📱 Features
+
+- Display a list of food recipes
+- View recipe details
+- Clean and simple UI
+- Built using Flutter widgets
+- Responsive layout for different screen sizes
+
+---
+
+## 🗂️ Project Structure
+
+```text
+lib/
+├── data/
+│   └── recipe_data.dart
+├── models/
+│   └── recipe.dart
+├── pages/
+│   ├── detail_page.dart
+│   ├── favorite_page.dart
+│   ├── notification_page.dart
+│   └── recipe_home_page.dart
+├── services/
+│   └── favorite_manager.dart
+├── widgets/
+│   ├── detail/
+│   │   ├── add_to_cart_button.dart
+│   │   ├── circle_icon_button.dart
+│   │   ├── creator_section.dart
+│   │   ├── header_image.dart
+│   │   ├── info_chip.dart
+│   │   ├── ingredient_tile.dart
+│   │   ├── instruction_tile.dart
+│   │   └── related_section.dart
+│   ├── segmented_tabs.dart
+│   └── home/
+│       ├── featured_card.dart
+│       ├── icon_badge.dart
+│       └── popular_card.dart
+└── main.dart
+```
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone this repository
+```bash
+git clone https://github.com/your-username/food_recipe_app.git
+```
+2. Navigate to the project directory
+```bash
+cd food_recipe_app
+```
+4. Install dependencies
+```bash
+flutter pub get
+```
+5. Run the application
+```bash
+flutter run
+```
