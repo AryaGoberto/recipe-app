@@ -149,27 +149,12 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                               key: const ValueKey('ingredients'),
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text(
-                                      'Ingredients',
-                                      style: theme.textTheme.titleMedium
-                                          ?.copyWith(
-                                            fontWeight: FontWeight.w700,
-                                            color: const Color(0xFF0F172A),
-                                          ),
-                                    ),
-                                    Text(
-                                      'Add All to Cart',
-                                      style: theme.textTheme.bodyMedium
-                                          ?.copyWith(
-                                            color: const Color(0xFF1FB8AD),
-                                            fontWeight: FontWeight.w700,
-                                          ),
-                                    ),
-                                  ],
+                                Text(
+                                  'Ingredients',
+                                  style: theme.textTheme.titleMedium?.copyWith(
+                                    fontWeight: FontWeight.w700,
+                                    color: const Color(0xFF0F172A),
+                                  ),
                                 ),
                                 const SizedBox(height: 10),
                                 ListView.separated(
@@ -214,11 +199,10 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                             ),
                     ),
                     const SizedBox(height: 18),
-                    const AddToCartButton(),
+                    AddToCartButton(recipe: widget.recipe),
                     const SizedBox(height: 16),
                     CreatorSection(recipe: widget.recipe),
                     const SizedBox(height: 20),
-                    RelatedSection(related: related),
                     const SizedBox(height: 24),
                   ],
                 ),

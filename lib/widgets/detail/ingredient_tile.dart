@@ -36,26 +36,11 @@ class IngredientTile extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-            decoration: BoxDecoration(
-              color: const Color(0xFFF4F9FB),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Row(
-              children: [
-                const Icon(Icons.remove, size: 16, color: Color(0xFF1FB8AD)),
-                const SizedBox(width: 8),
-                Text(
-                  qty,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w700,
-                    color: const Color(0xFF0F172A),
-                  ),
-                ),
-                const SizedBox(width: 8),
-                const Icon(Icons.add, size: 16, color: Color(0xFF1FB8AD)),
-              ],
+          Text(
+            qty,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w600,
+              color: const Color(0xFF7C8BA1),
             ),
           ),
         ],
