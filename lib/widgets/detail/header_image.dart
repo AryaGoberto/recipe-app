@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 import 'circle_icon_button.dart';
 
 class HeaderImage extends StatelessWidget {
   const HeaderImage({super.key, required this.recipe});
 
   final Map<String, dynamic> recipe;
+
+  void _shareRecipe(BuildContext context) {
+    final title = recipe['title'] ?? 'Recipe';
+    final subtitle = recipe['subtitle'] ?? 'Check out this amazing recipe!';
+    final time = recipe['time'] ?? '';
+
+    Share.share(
+      '''🍳 $title\n\n⏱️ Time: $time\n\nCheck out this recipe in the app!''',
+      subject: 'Check out this recipe: $title',
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +61,10 @@ class HeaderImage extends StatelessWidget {
         Positioned(
           top: 28,
           right: 28,
-          child: CircleIconButton(icon: Icons.favorite_border, onTap: () {}),
+          child: CircleIconButton(
+            icon: Icons.share_rounded,
+            onTap: () => _shareRecipe(context),
+          ),
         ),
       ],
     );

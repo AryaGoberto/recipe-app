@@ -249,27 +249,5 @@ class RecipeHomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildSectionHeader(ThemeData theme, String title, bool isMobile) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          title,
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.w700,
-            color: const Color(0xFF0F172A),
-            fontSize: isMobile ? null : 22,
-          ),
-        ),
-        Text(
-          'See All',
-          style: theme.textTheme.bodyMedium?.copyWith(
-            color: const Color(0xFF1FB8AD),
-            fontWeight: FontWeight.w700,
-            fontSize: isMobile ? null : 16,
-          ),
-        ),
-      ],
-    );
-  }
+ 
 }
