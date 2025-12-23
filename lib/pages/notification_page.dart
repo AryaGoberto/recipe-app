@@ -3,19 +3,13 @@ import '../data/recipe_data.dart';
 import '../widgets/home/popular_card.dart';
 import 'detail_page.dart';
 
-class NotificationPage extends StatefulWidget {
+class NotificationPage extends StatelessWidget {
   const NotificationPage({super.key});
 
   @override
-  State<NotificationPage> createState() => _NotificationPageState();
-}
-
-class _NotificationPageState extends State<NotificationPage> {
-  // For now, using empty list. Later can connect to real notification service
-  final List<Map<String, dynamic>> notifications = [];
-
-  @override
   Widget build(BuildContext context) {
+    // For now, using empty list. Later can connect to real notification service
+    final List<Map<String, dynamic>> notifications = [];
     final theme = Theme.of(context);
     final screenWidth = MediaQuery.of(context).size.width;
     final isMobile = screenWidth < 600;
@@ -73,6 +67,7 @@ class _NotificationPageState extends State<NotificationPage> {
               )
             : _buildNotificationList(
                 context,
+                notifications,
                 theme,
                 horizontalPadding,
                 verticalPadding,
@@ -85,6 +80,7 @@ class _NotificationPageState extends State<NotificationPage> {
 
   Widget _buildNotificationList(
     BuildContext context,
+    List<Map<String, dynamic>> notifications,
     ThemeData theme,
     double horizontalPadding,
     double verticalPadding,
