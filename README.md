@@ -16,10 +16,13 @@ This project demonstrates fundamental Flutter concepts such as widget compositio
 
 ---
 ## 📱 ScreenShot
-<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/1.jpeg" width="300"/>
-<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/2.jpeg" width="300"/>
-<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/3.jpeg" width="300"/>
-<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/4.jpeg" width="300"/>
+<div style="display:flex; gap:16px; flex-wrap:wrap;">
+  <img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/1.jpeg?raw=true" width="200"/>
+  <img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/2.jpeg?raw=true" width="200"/>
+  <img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/3.jpeg?raw=true" width="200"/>
+  <img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/4.jpeg?raw=true" width="200"/>
+</div>
+
 
 ---
 ## 🗂️ Project Structure
