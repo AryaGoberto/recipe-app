@@ -15,7 +15,13 @@ This project demonstrates fundamental Flutter concepts such as widget compositio
 - Responsive layout for different screen sizes
 
 ---
+## 📱 ScreenShot
+<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/1.jpeg" width="300"/>
+<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/2.jpeg" width="300"/>
+<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/3.jpeg" width="300"/>
+<img src="https://github.com/AryaGoberto/recipe-app/blob/main/assets/screenshot/4.jpeg" width="300"/>
 
+---
 ## 🗂️ Project Structure
 
 ```text
